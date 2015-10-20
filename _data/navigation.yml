@@ -26,9 +26,9 @@
 #
 #   Navigation to the right › side: right
 #
-# - title: "Info"
-#   url: "/info/"
-#   side: right
+- title: "Info"
+  url: "/info/"
+  side: right
 
 - title: "Search"
   url: "/search/"
