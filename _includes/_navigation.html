@@ -19,7 +19,7 @@
         /____/                                 /____/                          
 
 {% endcomment %}
-      <ul class="right">
+      <ul class="left">
         {% for link in site.data.navigation %}
 
               {% if link.url contains 'http' %}
@@ -30,14 +30,14 @@
                 {% assign domain = site.url %}
               {% endif %}
 
-          {% comment %}   If there are links for right side begin   {% endcomment %}
-          {% if link.side == 'right' %}
-            {% comment %}   If right side WITHOUT dropdown menu do   {% endcomment %}
+          {% comment %}   If there are links for left side begin   {% endcomment %}
+          {% if link.side == 'left' %}
+            {% comment %}   If left side WITHOUT dropdown menu do   {% endcomment %}
             {% if link.dropdown == nil %}
               <li class="divider"></li>
               <li{% if link.url == page.url %} class="active"{% endif %}><a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title | escape }}</a></li>
 
-            {% comment %}   If right side WITH dropdown menu do   {% endcomment %}
+            {% comment %}   If left side WITH dropdown menu do   {% endcomment %}
             {% else %}
 
               <li class="divider"></li>
@@ -73,7 +73,7 @@
                                           /____/                          
 
 {% endcomment %}
-      <ul class="left">
+      <ul class="right">
         {% for link in site.data.navigation %}
 
               {% if link.url contains 'http' %}
@@ -84,15 +84,15 @@
                 {% assign domain = site.url %}
               {% endif %}
 
-          {% comment %}   If there are links for left side begin   {% endcomment %}
-          {% if link.side == 'left' %}
+          {% comment %}   If there are links for right side begin   {% endcomment %}
+          {% if link.side == 'right' %}
 
-            {% comment %}   If left side WITHOUT dropdown menu do   {% endcomment %}
+            {% comment %}   If right side WITHOUT dropdown menu do   {% endcomment %}
             {% if link.dropdown == nil %}
               <li{% if link.url == page.url %} class="active"{% endif %}><a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title | escape }}</a></li>
               <li class="divider"></li>
 
-            {% comment %}   If left side WITH dropdown menu do   {% endcomment %}
+            {% comment %}   If right side WITH dropdown menu do   {% endcomment %}
             {% else %}
 
               <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
