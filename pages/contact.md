@@ -1,15 +1,13 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact Us"
+meta_title: "Contact and use our contact form"
 subheadline: ""
-teaser: ""
+teaser: "Wanna get in touch with us? Use the contact form!"
 permalink: "/contact/"
 ---
+Questions or comments?
 
-- [Wufoo][1]
-- [Google Forms][2]
-
-
- [1]: http://www.wufoo.com/
- [2]: https://www.google.com/intl/de_de/forms/about/
+<div class="panel">
+<iframe width="100%" height="650" frameborder="0" scrolling="no" src="https://myeigenbox.wufoo.com/embed/contact-form/"></iframe>
+</div>
